@@ -50,7 +50,11 @@ public class ToDo {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "ToDo [id=" + id + ", text=" + text + ", dueDate=" + dueDate
+				+ ", complete=" + complete + "]";
+	}
 
 }
